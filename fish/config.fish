@@ -6,6 +6,9 @@ function fish_user_key_bindings
   fish_vi_key_bindings
 end
 
+# Path
+set -gx PATH "$HOME/.cargo/bin"  "/usr/local/go/bin" "$HOME/.cargo/env" $PATH;
+
 # Aliases
 alias npd="npm run dev"
 alias lg="lazygit"
